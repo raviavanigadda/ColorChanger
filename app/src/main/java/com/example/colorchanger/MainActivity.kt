@@ -52,13 +52,7 @@ class MainActivity : AppCompatActivity() {
 
         seekBarGreen.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
-                //Create a color using p1
                 viewModel.updateGreenColor(p1)
-
-
-                //val redcolor = Color.argb(255,p1,0,0)
-                //colorDisplay.setBackgroundColor(redcolor)
-                // colorDisplay.setBackgroundColor(p1)
             }
 
             override fun onStartTrackingTouch(p0: SeekBar?) {
