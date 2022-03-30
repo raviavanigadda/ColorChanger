@@ -15,6 +15,7 @@ class MainActivityViewModel: ViewModel() {
         _redColor.value = 0
         _blueColor.value = 0
         _greenColor.value = 0
+        updateColor()
     }
 
     private var _viewColor = MutableLiveData<Int>()
